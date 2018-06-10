@@ -1,0 +1,41 @@
+.teste{
+    position: absolute;
+    left: 170%;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(-25%);
+    display: inline-table;
+
+
+}
+
+.spinner{
+    transform: scale(1);
+    border: 2px solid #4285f4;
+    border-top-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spin 1.1s infinite linear;
+    animation: spin 1.1s infinite linear;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    top: 6px;
+    -webkit-transition: -webkit-transform .15s linear;
+    transition: transform .15s linear;
+}
+
+.teste:hover{
+    cursor: pointer;
+}
+
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    }
